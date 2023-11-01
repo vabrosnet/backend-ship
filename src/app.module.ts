@@ -9,11 +9,11 @@ import { ShipsModule } from './ships/ships.module';
   imports: [
     TypeOrmModule.forRoot({
       type: "mysql",
-      host: "localhost",
-      port: 3307,
-      username: "user_crud",
-      password: "root",
-      database: "db_crud",
+      host: "roundhouse.proxy.rlwy.net", //localhost
+      port: 12504, //3307
+      username: "root", //user_crud
+      password: "ACGgEehbdHCH245Bf2ehC-Dbf2bBFGAh", //root
+      database: "railway", //"db_crud",
       //autoLoadEntities: true,
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true, //no usar en producción
