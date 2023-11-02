@@ -5,14 +5,10 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 
 ConfigModule.forRoot({
   envFilePath: '.development.env',
-  // isGlobal: true
+  isGlobal: true
 });
 
-const dd = process.env.DB_PORT
-
 const configService = new ConfigService();
-
-console.log("hhhhhhhhhhhhhh", configService.get('DB_HOST'), dd)
 
 export const DataSourceConfig: DataSourceOptions = {
     type: 'mysql',
