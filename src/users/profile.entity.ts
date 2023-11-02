@@ -11,9 +11,6 @@ export class Profile {
     @Column()
     lastname: string;
 
-    @Column()
-    mail: string;
-
     @Column({ type: 'date', nullable: true })
     birthdate: Date;
 }
