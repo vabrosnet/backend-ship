@@ -9,7 +9,6 @@ ConfigModule.forRoot({
 });
 
 const configService = new ConfigService();
-
 export const DataSourceConfig: DataSourceOptions = {
     type: 'mysql',
     host: configService.get('MYSQLHOST'),
